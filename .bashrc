@@ -41,7 +41,7 @@ function __failed_cmd {
 }
 
 GIT_PS1_SHOWUPSTREAM="auto"  # < behind, > ahead, <> diverged, = sync
-GIT_PS1_SHOWDIRTYSTATE=true  # + unstaged, * staged
+GIT_PS1_SHOWDIRTYSTATE=true  # * unstaged, + staged
 GIT_PS1_SHOWSTASHSTATE=false  # $ stashes
 GIT_PS1_SHOWUNTRACKEDFILES=true  # % untracked
 

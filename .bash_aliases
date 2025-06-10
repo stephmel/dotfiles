@@ -5,14 +5,15 @@ alias rm='rm -i'
 alias dus='du -sh *'
 alias c='clear'
 alias path='tr "." "\n" <<< "$PATH"'
+alias genv='printenv | grep -i'
 
 ####-- git --####
 alias gl='git log --oneline'
 alias gs='git status -sb'
-alias gam='git add -u'
-alias gaa='git add -A'
+alias ga='git add'
 alias gc='git commit'
 alias gp='git push'
+alias gd='git diff'
 
 ####-- Tooling --####
 alias kc='kubectl'
