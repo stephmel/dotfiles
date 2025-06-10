@@ -49,7 +49,7 @@ PROMPT_DIRTRIM=2
 
 PS1=""
 # PS1+="\[\e[90m\]\A "
-PS1+="${BLUE}󰉋 \w" 
+PS1+="${BLUE} \w" 
 PS1+="${TURQ}\$(__git_ps1 ' ( %s)')\n"
 PS1+="\$(__failed_cmd)"
 PS1+="${RESET}"
