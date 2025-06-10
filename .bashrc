@@ -8,6 +8,7 @@ export EDITOR=nvim
 set -o vi
 cd() { builtin cd "$@" && ls -aF;}
 bind 'set show-all-if-ambiguous on'
+# bind 'TAB:menu-complete'
 
 ####-- TMUX compatible History --####
 shopt -s histappend
@@ -21,4 +22,5 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 ####-- Shell Integrations --####
+source /etc/profile.d/bash_completion.sh
 eval "$(fzf --bash)"
