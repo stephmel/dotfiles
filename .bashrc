@@ -13,7 +13,7 @@ bind 'set show-all-if-ambiguous on'
 
 ####-- TMUX compatible History --####
 shopt -s histappend
-HISTSIZE=HISTFILESIZE=3000
+HISTSIZE=HISTFILESIZE=5000
 HISTCONTROL=ignoreboth:erasedups
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
