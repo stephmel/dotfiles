@@ -3,11 +3,13 @@ alias ..='cd ..'
 alias ll='ls -alF'
 alias rm='rm -i'
 alias dus='du -sh *'
+alias s='ss -ltp'
 alias c='clear'
 alias path='tr "." "\n" <<< "$PATH"'
 alias genv='printenv | grep -i'
 
 ####-- git --####
+alias g='git'
 alias gl='git log --oneline'
 alias gs='git status -sb'
 alias ga='git add'
