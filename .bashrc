@@ -8,7 +8,7 @@ export EDITOR=nvim
 set -o vi  # vim mode, default is emacs
 bind 'set completion-ignore-case on'
 bind 'set show-all-if-ambiguous on'
-# bind 'TAB:menu-complete'
+bind 'TAB:menu-complete'
 
 ####-- TMUX compatible History --####
 shopt -s histappend
@@ -31,14 +31,6 @@ TURQ="\[\033[36m\]"
 RESET="\[\033[0m\]"
 LBL="\[\e[38;2;173;216;230m\]"
 
-function __failed_cmd {
-	if [[ $? -eq 0 ]]; then
-		printf "\033[2;34m "
-	else
-		printf "\033[2;31m "
-	fi
-}
-
 GIT_PS1_SHOWUPSTREAM="auto"  # < behind, > ahead, <> diverged, = sync
 GIT_PS1_SHOWDIRTYSTATE=true  # * unstaged, + staged
 GIT_PS1_SHOWSTASHSTATE=false  # $ stashes
@@ -50,9 +42,9 @@ PS1=""
 # PS1+="\[\e[90m\]\A "
 PS1+="${BLUE} \w" 
 PS1+="${TURQ}\$(__git_ps1 ' ( %s)')\n"
-PS1+="\$(__failed_cmd)"
-PS1+="${RESET}"
+PS1+="\[\033[2;34m\]"
+PS1+="${RESET} "
 
 ####-- Shell Integrations --####
 source /etc/profile.d/bash_completion.sh
-eval "$(fzf --bash)"
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
