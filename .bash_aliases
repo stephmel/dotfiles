@@ -9,7 +9,7 @@ alias path='tr "." "\n" <<< "$PATH"'
 alias genv='printenv | grep -i'
 
 alias ls='lsd -A'
-cd() { builtin cd "$@" && ls -aF;}
+cd() { builtin cd "$@" && ls ;}
 
 ####-- git --####
 alias g='git'
