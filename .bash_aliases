@@ -1,12 +1,15 @@
 ####-- Builtins --####
 alias ..='cd ..'
-alias ll='ls -alF'
+alias ll='ls -lF'
 alias rm='rm -i'
 alias dus='du -sh *'
 alias s='ss -ltp'
 alias c='clear'
 alias path='tr "." "\n" <<< "$PATH"'
 alias genv='printenv | grep -i'
+
+alias ls='lsd -A'
+cd() { builtin cd "$@" && ls -aF;}
 
 ####-- git --####
 alias g='git'

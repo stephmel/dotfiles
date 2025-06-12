@@ -6,7 +6,6 @@ export EDITOR=nvim
 
 ####-- Behaviour --####
 set -o vi  # vim mode, default is emacs
-cd() { builtin cd "$@" && ls -aF;}
 bind 'set completion-ignore-case on'
 bind 'set show-all-if-ambiguous on'
 # bind 'TAB:menu-complete'
