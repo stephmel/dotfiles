@@ -1,0 +1,151 @@
+
+{
+  "files.autoSave": "afterDelay",
+
+  "explorer.autoReveal": true,
+  "breadcrumbs.enabled": false,
+
+  "editor.fontFamily": "JetbrainsMono Nerd Font",
+  "editor.fontLigatures": true,
+  "terminal.integrated.fontFamily": "Red Hat Mono",
+
+  "git.confirmSync": false,
+
+  // Vim Config
+  "vim.smartRelativeLine": true,
+  "editor.cursorSurroundingLines": 8,
+  "vim.useSystemClipboard": true,
+  "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.color": "#a9dc7660",
+  "vim.highlightedyank.duration": 250,
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [ "<leader>", "f" ], // Search text
+      "commands": [ "workbench.action.findInFiles" ]
+    },
+    {
+      "before": [ "<leader>", "s" ], // Search symbol
+      "commands": [ "workbench.action.showAllSymbols" ]
+    },
+    {
+      "before": [ "g", "p", "d" ],
+      "commands": [ "editor.action.peekDefinition" ]
+    },
+    {
+      "before": [ "g", "h" ],
+      "commands": [ "editor.action.showDefinitionPreviewHover" ]
+    },
+    {
+      "before": [ "g", "i" ],
+      "commands": [ "editor.action.goToImplementation" ]
+    },
+    {
+      "before": [ "g", "p", "i" ],
+      "commands": [ "editor.action.peekImplementation" ]
+    },
+    {
+      "before": [ "g", "q" ],
+      "commands": [ "editor.action.quickFix" ]
+    },
+    {
+      "before": [ "g", "r" ],
+      "commands": [ "editor.action.referenceSearch.trigger" ]
+    },
+    {
+      "before": [ "g", "t" ],
+      "commands": [ "editor.action.goToTypeDefinition" ]
+    },
+    {
+      "before": [ "g", "p", "t" ],
+      "commands": [ "editor.action.peekTypeDefinition" ]
+    },
+    {
+      "before": [ "<leader>", "e" ],
+      "commands": [ "workbench.view.explorer" ]
+    },
+    {
+      "before": [ "H" ], // Focus previous tab at the left 
+      "commands": [ "workbench.action.previousEditor" ]
+    },
+    {
+      "before": [ "L" ], // Focus next tab at the right
+      "commands": [ "workbench.action.nextEditor" ]
+    },
+    {
+      "before": [ "Q" ], // Close current tab
+      "after": [ "<C-w>", "q" ]
+    },
+    {
+      "before": [ "|" ], // Split tab vertically
+      "after": [ "<C-w>", "v" ]
+    },
+    {
+      "before": [ "_" ], // Split tab horizontally
+      "after": [ "<C-w>", "s" ]
+    },
+    {
+      "before": [ "Q" ], // Close current tab
+      "after": [ "<C-w>", "q" ]
+    },
+    // Git
+    {
+      "before": [ "<leader>", "g", "p" ], // Peek Git diff for the changed line
+      "commands": [ "editor.action.dirtydiff.next" ]
+    },
+    {
+      "before": [ "<leader>", "g", "r" ], // Revert hunk
+      "commands": [ "git.revertSelectedRanges" ]
+    },
+    {
+      "before": [ "<leader>", "g", "j" ], // Jump to next Git change
+      "commands": [ "workbench.action.editor.nextChange" ]
+    },
+    {
+      "before": [ "<leader>", "g", "k" ], // Jump to previous Git change
+      "commands": [ "workbench.action.editor.previousChange" ]
+    },
+    {
+      "before": [ "<leader>", "g", "g" ], // Open file in GitHub
+      "commands": [ "gitlens.openFileOnRemote" ]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": [ "<leader>", "g", "g" ], // Open file in GitHub
+      "commands": [ "gitlens.openFileOnRemote" ]
+    }
+  ],
+
+  // Python
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}/src"
+  ],
+  "python.terminal.activateEnvironment": true,
+  "python.defaultInterpreterPath": "${workspaceFolder}.venv/bin/python",
+
+  // Golang
+  "go.formatTool": "goimports",
+  "[go]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  "[go.mod]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+
+  // Extensions
+  "workbench.colorTheme": "Catppuccin Macchiato",
+  "window.menuBarVisibility": "compact",
+  "editor.minimap.enabled": false,
+  "redhat.telemetry.enabled": false,
+  "vs-kubernetes": {
+    "vscode-kubernetes.helm-path-linux": "/home/wsl/.local/state/vs-kubernetes/tools/helm/linux-amd64/helm",
+    "vscode-kubernetes.minikube-path-linux": "/home/wsl/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube"
+  }
+}
