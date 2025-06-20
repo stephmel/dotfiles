@@ -7,7 +7,7 @@
 
   "editor.fontFamily": "JetbrainsMono Nerd Font",
   "editor.fontLigatures": true,
-  "terminal.integrated.fontFamily": "Red Hat Mono",
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font",
 
   "git.confirmSync": false,
 
