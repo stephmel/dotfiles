@@ -2,7 +2,6 @@
   "files.autoSave": "afterDelay",
 
   "explorer.autoReveal": true,
-  "breadcrumbs.enabled": false,
 
   "editor.fontFamily": "JetbrainsMono Nerd Font",
   "editor.fontLigatures": true,
@@ -11,6 +10,7 @@
   "git.confirmSync": false,
   "git.autofetch": true,
 
+  "security.workspace.trust.untrustedFiles": "open",
   "telemetry.telemetryLevel": "off",
 
   // Vim Config
@@ -21,7 +21,11 @@
   "vim.highlightedyank.color": "#a9dc7660",
   "vim.highlightedyank.duration": 250,
   "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-i>": false
+  },
   "vim.normalModeKeyBindings": [
+
     {
       "before": [ "<leader>", "f" ], // Search text
       "commands": [ "workbench.action.findInFiles" ]
@@ -147,6 +151,32 @@
   },
   "docker.extension.enableComposeLanguageServer": false,
   "diffEditor.ignoreTrimWhitespace": false,
+  "gitlens.plusFeatures.enabled": false,
+  "github-enterprise.uri": "https://github.axa.com",
+  "github.copilot.preferredAccount": "stephan-melzer_axaghcop",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "git.blame.editorDecoration.enabled": false,
+  "git.blame.statusBarItem.enabled": false,
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "vscode-kubernetes.helm-path": "C:\\Users\\I051099\\bin\\helm.exe",
+  "vscode-kubernetes.kubectl-path": "C:\\Users\\I051099\\bin\\oc.exe",
   "workbench.colorTheme": "Catppuccin Mocha",
-  "workbench.iconTheme": "catppuccin-mocha"
+  "workbench.iconTheme": "catppuccin-mocha",
+  "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "none",
+  
+  // AP Remote Settings
+  "remote.SSH.enableAgentForwarding": true,  // optional
+  "remote.SSH.localServerDownload": "always",  // download locally, scp to remote
+  "remote.SSH.path": "C:\\Program Files\\Git\\usr\\bin\\ssh.exe",
+  "remote.SSH.showLoginTerminal": true,  //optional
+  "remote.SSH.remotePlatform": {
+    "192.168.*.*": "linux",
+    "192.168.178.254": "linux"
+  },
+  "remote.extensionKind": {  // run Copilot locally
+    "GitHub.copilot": ["ui"],
+    "GitHub.copilot-chat": ["ui"]
+  },
 }
