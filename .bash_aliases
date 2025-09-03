@@ -13,7 +13,7 @@ cd() { builtin cd "$@" && ls ;}
 
 ####-- git --####
 alias g='git'
-alias gl='git log --oneline'
+alias gl='git log --oneline --max-count 10'
 alias gs='git status -sb'
 alias ga='git add'
 alias gal='git add -A'
