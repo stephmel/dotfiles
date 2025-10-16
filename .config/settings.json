@@ -171,6 +171,7 @@
   "remote.SSH.localServerDownload": "always",  // download locally, scp to remote
   "remote.SSH.path": "C:\\Program Files\\Git\\usr\\bin\\ssh.exe",
   "remote.SSH.showLoginTerminal": true,  //optional
+  "remote.SSH.lockfilesInTmp": true, // do not spam remote server with lockfiles
   "remote.SSH.remotePlatform": {
     "192.168.*.*": "linux",
     "192.168.178.254": "linux"
