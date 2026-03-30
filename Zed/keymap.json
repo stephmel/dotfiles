@@ -1,0 +1,48 @@
+// Place in %appdata%/Zed
+[
+  {
+    "context": "Workspace"
+  },
+  {
+    "bindings": {
+      "j k": "vim::NormalBefore"
+    },
+    "context": "Editor && vim_mode == insert"
+  },
+  {
+    "bindings": {
+      "alt-2": "git_panel::Toggle"
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-ö": "terminal_panel::ToggleFocus"
+    }
+  },
+  {
+    "bindings": {
+      "alt-4": "workspace::ToggleRightDock"
+    }
+  },
+  {
+    "bindings": {
+      "alt-3": "terminal_panel::Toggle"
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-ö": null
+    },
+    "context": "Workspace"
+  },
+  {
+    "bindings": {
+      "ctrl-ä": "assistant::ToggleFocus"
+    }
+  },
+  {
+    "bindings": {
+      "alt-1": "project_panel::Toggle"
+    }
+  }
+]
