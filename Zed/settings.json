@@ -5,6 +5,10 @@
   "buffer_font_size": 15,
   "format_on_save": "off",
   "icon_theme": "Catppuccin Mocha",
+  "inlay_hints": {
+    "enabled": true,
+  },
+  "relative_line_numbers": "enabled",
   "session": {
     "trust_all_worktrees": true
   },
