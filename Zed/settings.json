@@ -1,0 +1,27 @@
+// Place in %appdata%/Zed
+{
+  "autosave": "on_focus_change",
+  "base_keymap": "JetBrains",
+  "buffer_font_size": 15,
+  "format_on_save": "off",
+  "icon_theme": "Catppuccin Mocha",
+  "session": {
+    "trust_all_worktrees": true
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "terminal": {
+    "shell": {
+      "program": "C:\\Program Files\\Git\\bin\\bash.exe"
+    }
+  },
+  "theme": {
+    "dark": "Catppuccin Mocha",
+    "light": "Gruvbox Light",
+    "mode": "dark"
+  },
+  "ui_font_size": 16,
+  "vim_mode": true
+}
