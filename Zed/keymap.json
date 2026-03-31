@@ -1,48 +1,52 @@
-// Place in %appdata%/Zed
 [
   {
-    "context": "Workspace"
+    "context": "Workspace",
   },
   {
     "bindings": {
-      "j k": "vim::NormalBefore"
+      "j k": "vim::NormalBefore",
     },
-    "context": "Editor && vim_mode == insert"
+    "context": "Editor && vim_mode == insert",
   },
   {
     "bindings": {
-      "alt-2": "git_panel::Toggle"
-    }
-  },
-  {
-    "bindings": {
-      "ctrl-ö": "terminal_panel::ToggleFocus"
-    }
-  },
-  {
-    "bindings": {
-      "alt-4": "workspace::ToggleRightDock"
-    }
-  },
-  {
-    "bindings": {
-      "alt-3": "terminal_panel::Toggle"
-    }
-  },
-  {
-    "bindings": {
-      "ctrl-ö": null
+      "alt-2": "git_panel::Toggle",
     },
-    "context": "Workspace"
   },
   {
     "bindings": {
-      "ctrl-ä": "assistant::ToggleFocus"
-    }
+      "ctrl-ö": "terminal_panel::ToggleFocus",
+    },
   },
   {
     "bindings": {
-      "alt-1": "project_panel::Toggle"
-    }
-  }
+      "alt-4": "workspace::ToggleRightDock",
+    },
+  },
+  {
+    "bindings": {
+      "alt-3": "terminal_panel::Toggle",
+    },
+  },
+  {
+    "bindings": {
+      "ctrl-ö": null,
+    },
+    "context": "Workspace",
+  },
+  {
+    "bindings": {
+      "ctrl-ä": "agent::ToggleFocus",
+    },
+  },
+  {
+    "bindings": {
+      "alt-1": "project_panel::Toggle",
+    },
+  },
+  {
+    "bindings": {
+      "alt-v": "workspace::ToggleVimMode",
+    },
+  },
 ]

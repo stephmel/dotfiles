@@ -1,0 +1,13 @@
+[user]
+	signingkey = ~/.ssh/github.pub
+[core]
+	autocrlf = false
+	excludesfile = ~/.gitignore_global
+	editor = vim
+	symlinks = false
+[fetch]
+	prune = true
+[commit]
+	gpgsign = true
+[gpg]
+	format = ssh
