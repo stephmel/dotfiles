@@ -13,12 +13,17 @@
   },
   {
     "bindings": {
+      "alt-1": "project_panel::Toggle"
+    }
+  },
+  {
+    "bindings": {
       "alt-2": "git_panel::Toggle",
     },
   },
   {
     "bindings": {
-      "alt-3": "workspace::ToggleRightDock",
+      "alt-q": "workspace::ToggleRightDock",
     },
   },
   {
@@ -28,13 +33,13 @@
   },
   {
     "bindings": {
-      "alt-ö": "terminal_panel::ToggleFocus",
-    },
+      "alt-3": "terminal_panel::Toggle"
+    }
   },
   {
     "bindings": {
-      "alt-1": "project_panel::Toggle"
-    }
+      "alt-ö": "terminal_panel::ToggleFocus",
+    },
   },
   {
     "bindings": {
