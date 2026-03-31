@@ -1,12 +1,15 @@
 [
   {
     "context": "Workspace",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle",
+    },
   },
   {
+    "context": "Editor && vim_mode == insert",
     "bindings": {
       "j k": "vim::NormalBefore",
     },
-    "context": "Editor && vim_mode == insert",
   },
   {
     "bindings": {
@@ -15,38 +18,27 @@
   },
   {
     "bindings": {
-      "ctrl-ö": "terminal_panel::ToggleFocus",
+      "alt-3": "workspace::ToggleRightDock",
     },
   },
   {
     "bindings": {
-      "alt-4": "workspace::ToggleRightDock",
+      "alt-ä": "agent::ToggleFocus"
+    }
+  },
+  {
+    "bindings": {
+      "alt-ö": "terminal_panel::ToggleFocus",
     },
   },
   {
     "bindings": {
-      "alt-3": "terminal_panel::Toggle",
-    },
+      "alt-1": "project_panel::Toggle"
+    }
   },
   {
     "bindings": {
-      "ctrl-ö": null,
-    },
-    "context": "Workspace",
-  },
-  {
-    "bindings": {
-      "ctrl-ä": "agent::ToggleFocus",
-    },
-  },
-  {
-    "bindings": {
-      "alt-1": "project_panel::Toggle",
-    },
-  },
-  {
-    "bindings": {
-      "alt-v": "workspace::ToggleVimMode",
-    },
-  },
+      "alt-v": "workspace::ToggleVimMode"
+    }
+  }
 ]
