@@ -26,4 +26,3 @@ alias gd='git diff'
 alias kc='kubectl'
 alias tf='terraform'
 alias nv='nvim'
-# alias zed="WAYLAND_DISPLAY='' zed"
