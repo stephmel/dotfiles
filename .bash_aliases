@@ -5,7 +5,7 @@ alias rm='rm -i'
 alias dus='du -sh *'
 alias s='ss -ltp'
 alias c='clear'
-alias path='tr "." "\n" <<< "$PATH"'
+alias path='tr ":" "\n" <<< "$PATH"'
 alias genv='printenv | grep -i'
 
 alias ls='lsd -A'
